@@ -12,7 +12,7 @@ module.exports = class Domain extends Sequelize.Model {
         allowNull: false,
       },
       clientSecret: {
-        type: Sequelize.STRING(36),
+        type: Sequelize.STRING(36), //->UUIDV4 버전 검사 가능 타입까지 시퀄라이즈에서
         allowNull: false,
       },
     }, {
