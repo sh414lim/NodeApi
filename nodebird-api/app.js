@@ -1,5 +1,5 @@
  const express = require('express');
- const pateh = require('path');
+ const path = require('path');
  const cookieParser=require('cookie-parser');
  const passport = require('passport');
  const morgan=require('morgan');
@@ -31,7 +31,7 @@
 
  app.use(morgan('dev'));
  app.use(express.static(path.join(__dirname,'public')));
- app.use(express.join());
+ app.use(express.json());
  app.use(express.urlencoded({extended:false}));
  app.use(cookieParser(process.env.COOKIE_SECRET));
  app.use(session({
@@ -64,7 +64,7 @@
  });
 
  app.listen(app.get('port'),()=>{
-     console.log(app.get('port'), '번 포트에서 대기중');
- });
+     console.log(app.get('port'), '번 포트에서 대기중')
+ })
 
 
