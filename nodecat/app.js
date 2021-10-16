@@ -7,6 +7,7 @@ const session = require('express-session');
 const nunjucks = require('nunjucks');
 const dotenv = require('dotenv');
 
+//암호키
 dotenv.config();
 const authRouter = require('./routes/auth');
 const indexRouter = require('./routes');
