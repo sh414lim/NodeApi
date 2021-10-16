@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app"
+    "start": "nodemon app",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -12,10 +13,7 @@
   },
   "author": "marko",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sh414lim/NodeApi/issues"
-  },
-  "homepage": "https://github.com/sh414lim/NodeApi#readme",
+ 
   "dependencies": {
     "bcrypt": "^5.0.1",
     "cookie-parser": "^1.4.5",

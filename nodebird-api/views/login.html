@@ -58,7 +58,7 @@
         <button id="login" type="submit">로그인</button>
       </form>
       <script>
-        window.onload = () => {
+        window.onload = () => { 
           if (new URL(location.href).searchParams.get('loginError')) {
             alert(new URL(location.href).searchParams.get('loginError'));
           }
